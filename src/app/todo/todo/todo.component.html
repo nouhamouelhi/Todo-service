@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col" >
+        <div class="todo col" *ngFor="let todo of todos;">
+            <div class="name">{{todo.task}}</div>
+            <div class="content">{{todo.contenu}}</div>
+            <button class="btn btn-success">Delete Todo</button>
+        </div>
+    </div>
+    <div class="col">
+        <div class="row">
+            <input [(ngModel)]="task" type="text" class="form-control class">
+            <input [(ngModel)]="contenu" type="text" class="form-control class">
+            <button (click)="remplirTodo()" class="btn btn-primary">Add Todo</button>
+        </div>
+        </div>
+    </div>
+
+
